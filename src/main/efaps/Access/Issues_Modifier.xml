@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  Copyright 2009 moxter.net S.A.C.
+
+  All Rights Reserved.
+  This program contains proprietary and trade secret information of
+  moxter.net S.A.C. Copyright notice is precautionary only and does not
+  evidence any actual or intended publication of such program.
+
+  Author:          moxter.net S.A.C.
+  Revision:        $Rev: 4946 $
+  Last Changed:    $Date: 2010-07-08 06:57:28 -0500 (Thu, 08 Jul 2010) $
+  Last Changed By: $Author: miguel.a.aranya $
+
+-->
+
+<access-set xmlns="http://www.efaps.org/xsd"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.efaps.org/xsd http://www.efaps.org/xsd/eFaps_1.0.xsd">
+    <uuid>87e21a16-48f6-4627-b442-1698a67f221e</uuid>
+    <file-application>eFapsApp-Issues</file-application>
+    <file-revision>$Rev: 4946 $</file-revision>
+
+    <definition>
+        <version-expression>(version==latest)</version-expression>
+
+        <name>Issues_Admin</name>
+
+        <access-type>show</access-type>
+        <access-type>read</access-type>
+        <access-type>modify</access-type>
+        <access-type>checkout</access-type>
+        <access-type>checkin</access-type>
+        <access-type>create</access-type>
+        <access-type>statusBoost</access-type>
+
+        <type>Issues_Incident</type>
+        <type>Issues_Request</type>
+
+        <status group="Issues_IncidentStatus">
+            <key>Open</key>
+            <key>Closed</key>
+            <key>Aborted</key>
+        </status>
+
+        <status group="Issues_RequestStatus">
+            <key>Open</key>
+            <key>Closed</key>
+            <key>Aborted</key>
+        </status>
+
+        <role>Issues_Modifier</role>
+    </definition>
+
+</access-set>
+
+
