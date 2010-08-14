@@ -36,19 +36,12 @@
         <access-type>create</access-type>
         <access-type>statusBoost</access-type>
 
-        <type>Issues_Incident</type>
-        <type>Issues_Request</type>
+        <type>Issues_Ticket</type>
 
-        <status group="Issues_IncidentStatus">
+        <status group="Issues_TicketStatus">
             <key>Open</key>
             <key>Closed</key>
-            <key>Aborted</key>
-        </status>
-
-        <status group="Issues_RequestStatus">
-            <key>Open</key>
-            <key>Closed</key>
-            <key>Aborted</key>
+            <key>Canceled</key>
         </status>
 
         <role>Issues_Modifier</role>

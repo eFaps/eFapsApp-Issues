@@ -33,5 +33,17 @@
         <version-expression>(version==latest)</version-expression>
         <name>Issues_Ticket</name>
         <parent>Issues_TicketAbstract</parent>
+        <attribute>
+            <name>Status</name>
+            <type>Status</type>
+            <typelink>Issues_TicketStatus</typelink>
+            <sqltable>Issues_TicketAbstractSQLTable</sqltable>
+            <sqlcolumn>STATUS</sqlcolumn>
+            <trigger program="org.efaps.esjp.admin.datamodel.StatusValue"
+                    name="Issues_Ticket.Status.RANGE_VALUE"
+                    event="RANGE_VALUE">
+            </trigger>
+        </attribute>
+
     </definition>
 </datamodel-type>

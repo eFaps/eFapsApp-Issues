@@ -31,10 +31,10 @@
     </object>
 
     <object type="Admin_User_JAASKey">
-        <attribute name="Key">Issues_Modifer</attribute>
+        <attribute name="Key">Issues_Modifier</attribute>
 
         <linkattribute name="UserLink" type="Admin_User_Role">
-            <queryattribute name="Name">Issues_Modifer</queryattribute>
+            <queryattribute name="Name">Issues_Modifier</queryattribute>
         </linkattribute>
 
         <linkattribute name="JAASSystemLink" type="Admin_User_JAASSystem">

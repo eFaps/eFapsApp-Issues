@@ -33,22 +33,15 @@
         <access-type>checkout</access-type>
         <access-type>statusBoost</access-type>
 
-        <type>Issues_Incident</type>
-        <type>Issues_Request</type>
+        <type>Issues_Ticket</type>
 
-        <status group="Issues_IncidentStatus">
-            <key>Open</key>
-            <key>Closed</key>
-        </status>
-
-        <status group="Issues_RequestStatus">
+        <status group="Issues_TicketStatus">
             <key>Open</key>
             <key>Closed</key>
         </status>
 
         <role>Issues_Reader</role>
     </definition>
-
 </access-set>
 
 

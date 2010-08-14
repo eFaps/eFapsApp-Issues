@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+ Copyright 2003 - 2010 The eFaps Team
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+ Author:          The eFaps Team
+ Revision:        $Rev: 3445 $
+ Last Changed:    $Date: 2009-11-29 17:24:37 -0500 (Sun, 29 Nov 2009) $
+ Last Changed By: $Author: tim.moxter $
+
+-->
+
+<ui-table xmlns="http://www.efaps.org/xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.efaps.org/xsd http://www.efaps.org/xsd/eFaps_1.0.xsd">
+
+    <uuid>65ae554b-189f-426c-9697-8c6afa55f628</uuid>
+    <file-application>eFapsApp-Issues</file-application>
+    <file-revision>$Rev: 3445 $</file-revision>
+
+    <definition>
+        <version-expression>(version==latest)</version-expression>
+        <name>Issues_TicketTable</name>
+        <!-- fields -->
+        <field name="type">
+            <property name="Attribute">Type</property>
+            <property name="Label">Issues_TicketAbstract/Type.Label</property>
+            <property name="ShowTypeIcon">true</property>
+        </field>
+        <field name="name">
+            <property name="Attribute">Name</property>
+            <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
+            <property name="Label">Issues_TicketAbstract/Name.Label</property>
+        </field>
+        <field name="description">
+            <property name="Attribute">Description</property>
+            <property name="Label">Issues_TicketAbstract/Name.Label</property>
+        </field>
+        <field name="date">
+            <property name="Attribute">Date</property>
+            <property name="Label">Issues_TicketAbstract/Date.Label</property>
+        </field>
+        <field name="contactLink">
+            <property name="Select">linkto[ContactLink].attribute[Name]</property>
+            <property name="SelectAlternateOID">linkto[ContactLink].oid</property>
+            <property name="Label">Issues_TicketAbstract/ContactLink.Label</property>
+            <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
+        </field>
+        <field name="buttonOpenInNewWindow">
+            <icon>eFapsActionNewWindow</icon>
+            <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
+            <property name="Target">popup</property>
+            <property name="SortAble">false</property>
+            <property name="Width">15px</property>
+        </field>
+    </definition>
+</ui-table>

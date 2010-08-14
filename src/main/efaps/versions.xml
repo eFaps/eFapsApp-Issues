@@ -41,6 +41,11 @@
             <artifactId>efaps-crm-contacts</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+        <dependency order="3">
+            <groupId>org.efaps.module</groupId>
+            <artifactId>efaps-erp-commons</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <version number="1" reloadCache="false" login="true" compile="true">
     <description>Install eFaps Issues App.</description>
@@ -58,7 +63,7 @@
 
         SearchQuery query = new SearchQuery();
         query.setQueryTypes("Admin_User_JAASKey");
-        query.addWhereExprEqValue("Key", "Sales_Admin");
+        query.addWhereExprEqValue("Key", "Issues_Admin");
         query.addSelect("OID");
         query.execute();
         if (!query.next()) {
@@ -70,6 +75,11 @@
             DataImport imp3 = DataImport.readFile(url3);
             imp3.updateInDB();
         }
+        UIUpdate update = new UIUpdate();
+        <!-- connect the Issues_MyDesk to the main menu from efaps -->
+        update.add2Menu("e7230511-c763-4896-9e8e-e5237171f7d4", "87001cc3-c45c-44de-b8f1-776df507f268", 1);
+
+
     </script>
     </version>
 </install>

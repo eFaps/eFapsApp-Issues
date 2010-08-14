@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  Copyright 2003 - 2010 The eFaps Team
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Author:          The eFaps Team
+  Revision:        $Rev: 4642 $
+  Last Changed:    $Date: 2010-06-01 20:05:03 -0500 (Tue, 01 Jun 2010) $
+  Last Changed By: $Author: jan.moxter $
+
+-->
+
+<ui-menu xmlns="http://www.efaps.org/xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.efaps.org/xsd http://www.efaps.org/xsd/eFaps_1.0.xsd">
+
+    <uuid>8b2a26b7-9a95-41c8-bd20-8dd1f4796e88</uuid>
+    <file-application>eFapsApp-Issues</file-application>
+    <file-revision>$Rev: 4642 $</file-revision>
+
+    <definition>
+        <version-expression>(version==latest)</version-expression>
+        <name>Issues_TicketTree</name>
+        <access>
+            <role>Issues_Admin</role>
+            <role>Issues_Modifier</role>
+            <role>Issues_Reader</role>
+        </access>
+        <!-- targets -->
+        <target>
+            <menu>Issues_TicketTree_Menu</menu>
+            <form>Issues_TicketForm</form>
+        </target>
+        <!-- type tree for -->
+        <type>Issues_TicketAbstract</type>
+
+        <!-- properties -->
+        <property name="Target">content</property>
+        <property name="TargetMode">view</property>
+    </definition>
+</ui-menu>
