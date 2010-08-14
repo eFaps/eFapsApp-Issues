@@ -26,12 +26,12 @@
 <datamodel-type  xmlns="http://www.efaps.org/xsd"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.efaps.org/xsd http://www.efaps.org/xsd/eFaps_1.0.xsd">
-    <uuid>95a72b66-7efb-4087-8499-f608f44c1194</uuid>
+    <uuid>14796c65-40b7-4d8c-a76e-fa5a868b30a1</uuid>
     <file-application>eFapsApp-Issues</file-application>
     <file-revision>$Rev: 3731 $</file-revision>
     <definition>
         <version-expression>(version==latest)</version-expression>
-        <name>Issues_Incident</name>
+        <name>Issues_Ticket</name>
         <parent>Issues_TicketAbstract</parent>
     </definition>
 </datamodel-type>

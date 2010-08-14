@@ -71,7 +71,7 @@
             <sqlcolumn>DATE</sqlcolumn>
         </attribute>
          <attribute>
-            <name>Contact</name>
+            <name>ContactLink</name>
             <type>Link</type>
             <typelink>Contacts_Contact</typelink>
             <sqltable>ERP_DocumentAbstractSQLTable</sqltable>
