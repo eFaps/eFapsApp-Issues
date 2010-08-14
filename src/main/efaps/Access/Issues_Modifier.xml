@@ -26,7 +26,7 @@
     <definition>
         <version-expression>(version==latest)</version-expression>
 
-        <name>Issues_Admin</name>
+        <name>Issues_Modifier</name>
 
         <access-type>show</access-type>
         <access-type>read</access-type>

@@ -34,7 +34,7 @@
 
     <definition>
         <version-expression>(version==latest)</version-expression>
-        <name>Issues_Modifier</name>
+        <name>Issues_Reader</name>
         <status>true</status>
     </definition>
 </user-role>
