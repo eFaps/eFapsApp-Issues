@@ -52,7 +52,7 @@
             <sqlcolumn>ID</sqlcolumn>
         </attribute>
         <attribute>
-            <name>FromAbstract</name>
+            <name>FromAbstractLink</name>
             <type>Link</type>
             <typelink>Issues_TicketAbstract</typelink>
             <sqltable>Issues_Ticket2ObjectSQLTable</sqltable>
