@@ -46,7 +46,9 @@
         </target>
         <!-- type tree for -->
         <type>Issues_TicketAbstract</type>
-
+        <childs>
+            <child>Issues_TicketTree_Documents</child>
+        </childs>
         <!-- properties -->
         <property name="Target">content</property>
         <property name="TargetMode">view</property>
