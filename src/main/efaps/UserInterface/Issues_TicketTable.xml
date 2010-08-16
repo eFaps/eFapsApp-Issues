@@ -49,7 +49,7 @@
         <field name="description">
             <property name="ModeSearch">READONLY</property>
             <property name="Attribute">Description</property>
-            <property name="Label">Issues_TicketAbstract/Name.Label</property>
+            <property name="Label">Issues_TicketAbstract/Description.Label</property>
         </field>
         <field name="date">
             <property name="Attribute">Date</property>
