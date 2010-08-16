@@ -332,7 +332,7 @@
         <!-- eFaps ERP Products Module -->
         <dependency>
             <groupId>org.efaps.apps</groupId>
-            <artifactId>projects</artifactId>
+            <artifactId>sales</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
