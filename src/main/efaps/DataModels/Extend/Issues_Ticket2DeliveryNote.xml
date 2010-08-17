@@ -33,7 +33,6 @@
         <version-expression>(version==latest)</version-expression>
         <name>Issues_Ticket2DeliveryNote</name>
         <parent>Issues_Ticket2DocumentAbstract</parent>
-        <purpose abstract="true"/>
         <attribute>
             <name>FromLink</name>
             <type>Link</type>
