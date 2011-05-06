@@ -61,6 +61,10 @@
             <property name="Label">Issues_TicketAbstract/ContactLink.Label</property>
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
         </field>
+        <field name="status">
+            <property name="Attribute">StatusAbstract</property>
+            <property name="Label">Issues_TicketAbstract/StatusAbstract.Label</property>
+        </field>
         <field name="buttonOpenInNewWindow">
             <icon>eFapsActionNewWindow</icon>
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>

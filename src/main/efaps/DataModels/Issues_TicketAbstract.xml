@@ -71,6 +71,12 @@
             <sqlcolumn>DESCR</sqlcolumn>
         </attribute>
         <attribute>
+            <name>Note</name>
+            <type>String</type>
+            <sqltable>Issues_TicketAbstractSQLTable</sqltable>
+            <sqlcolumn>NOTE</sqlcolumn>
+        </attribute>
+        <attribute>
             <name>Date</name>
             <type>DateTime</type>
             <sqltable>Issues_TicketAbstractSQLTable</sqltable>

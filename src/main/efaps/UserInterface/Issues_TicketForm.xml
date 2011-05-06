@@ -122,5 +122,13 @@
         <field name="modified">
             <property name="Attribute">Modified</property>
         </field>
+        <field name="note">
+            <property name="Columns">80</property>
+            <property name="Rows">8</property>
+            <property name="ModeCreate">EDITABLE</property>
+            <property name="ModeEdit">EDITABLE</property>
+            <property name="ModeSearch">EDITABLE</property>
+            <property name="Attribute">Note</property>
+        </field>
     </definition>
 </ui-form>
