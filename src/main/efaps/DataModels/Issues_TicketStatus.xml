@@ -47,5 +47,9 @@
         <status key="Canceled">
             <description>The ticket is canceled.</description>
         </status>
+
+        <status key="Processing">
+            <description>The ticket is worked on.</description>
+        </status>
     </definition>
 </datamodel-statusgroup>
