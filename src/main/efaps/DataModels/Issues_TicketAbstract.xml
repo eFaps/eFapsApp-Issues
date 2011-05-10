@@ -83,6 +83,12 @@
             <sqlcolumn>DATE</sqlcolumn>
         </attribute>
          <attribute>
+            <name>EndDate</name>
+            <type>DateTime</type>
+            <sqltable>Issues_TicketAbstractSQLTable</sqltable>
+            <sqlcolumn>ENDDATE</sqlcolumn>
+        </attribute>
+         <attribute>
             <name>ContactLink</name>
             <type>Link</type>
             <typelink>Contacts_Contact</typelink>
