@@ -66,6 +66,7 @@
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
         </field>
         <field name="status">
+            <property name="FilterType">FREETEXT</property>
             <property name="Attribute">StatusAbstract</property>
             <property name="Label">Issues_TicketAbstract/StatusAbstract.Label</property>
         </field>
