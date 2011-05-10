@@ -52,6 +52,10 @@
             <property name="Label">Issues_TicketAbstract/Description.Label</property>
         </field>
         <field name="date">
+            <property name="FilterType">FREETEXT</property>
+            <property name="FilterRequired">TRUE</property>
+            <property name="FilterBase">DATABASE</property>
+            <property name="FilterDefault">MONTH:3</property>
             <property name="Attribute">Date</property>
             <property name="Label">Issues_TicketAbstract/Date.Label</property>
         </field>
