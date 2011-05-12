@@ -36,7 +36,7 @@
         <name>Issues_TicketForm</name>
         <!-- fields -->
         <field name="typeGroup" character="Group">
-            <property name="ModeCreate">REDAONLY</property>
+            <property name="ModeCreate">READONLY</property>
             <property name="GroupCount">2</property>
         </field>
         <field name="ticketTypeLink">
