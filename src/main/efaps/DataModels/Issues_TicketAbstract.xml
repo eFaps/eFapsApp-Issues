@@ -96,6 +96,32 @@
             <sqlcolumn>CONTACTID</sqlcolumn>
         </attribute>
         <attribute>
+            <name>TicketTypeLink</name>
+            <type>LinkWithRanges</type>
+            <typelink>Issues_AttributeDefinitionTicketType</typelink>
+            <sqltable>Issues_TicketAbstractSQLTable</sqltable>
+            <sqlcolumn>TICKETTYPEID</sqlcolumn>
+            <trigger program="org.efaps.esjp.admin.datamodel.RangesValue"
+                     name="Issues_TicketAbstract.TicketType.RANGE_VALUE"
+                     event="RANGE_VALUE" >
+                <property name="Value">Value</property>
+                <property name="Type">Issues_AttributeDefinitionTicketType</property>
+            </trigger>
+        </attribute>
+        <attribute>
+            <name>PriorityLink</name>
+            <type>LinkWithRanges</type>
+            <typelink>Issues_AttributeDefinitionPriority</typelink>
+            <sqltable>Issues_TicketAbstractSQLTable</sqltable>
+            <sqlcolumn>PRIORITYID</sqlcolumn>
+            <trigger program="org.efaps.esjp.admin.datamodel.RangesValue"
+                     name="Issues_TicketAbstract.PriorityLink.RANGE_VALUE"
+                     event="RANGE_VALUE" >
+                <property name="Value">Value</property>
+                <property name="Type">Issues_AttributeDefinitionPriority</property>
+            </trigger>
+        </attribute>
+        <attribute>
             <name>StatusAbstract</name>
             <type>Status</type>
             <typelink>Admin_DataModel_StatusAbstract</typelink>

@@ -44,15 +44,19 @@
             <column name="DATE"            type="DATETIME"        not-null="true"/>
             <column name="ENDDATE"         type="DATETIME"/>
             <column name="CONTACTID"       type="INTEGER"         not-null="true"/>
+            <column name="TICKETTYPEID"    type="INTEGER"/>
+            <column name="PRIORITYID"      type="INTEGER"/>
             <column name="STATUS"          type="INTEGER"         not-null="true"/>
             <column name="CREATOR"         type="INTEGER"         not-null="true"/>
             <column name="CREATED"         type="DATETIME"        not-null="true"/>
             <column name="MODIFIER"        type="INTEGER"         not-null="true"/>
             <column name="MODIFIED"        type="DATETIME"        not-null="true"/>
-            <foreign name="T_ISSTICKET_FK_COMPANYID" key="COMPANYID"     reference="T_USERABSTRACT(ID)"/>
-            <foreign name="T_ISSTICKET_FK_CONTACTID" key="CONTACTID"     reference="T_COCONTACT(ID)"/>
-            <foreign name="T_ISSTICKET_FK_CRTR"      key="CREATOR"       reference="T_USERPERSON(ID)"/>
-            <foreign name="T_ISSTICKET_FK_MDFR"      key="MODIFIER"      reference="T_USERPERSON(ID)"/>
+            <foreign name="T_ISSTICKET_FK_COMPANYID"    key="COMPANYID"     reference="T_USERABSTRACT(ID)"/>
+            <foreign name="T_ISSTICKET_FK_CONTACTID"    key="CONTACTID"     reference="T_COCONTACT(ID)"/>
+            <foreign name="T_ISSTICKET_FK_TICKETTYPEID" key="TICKETTYPEID"  reference="T_ERPATTRDEF(ID)"/>
+            <foreign name="T_ISSTICKET_FK_PRIORITYID"   key="PRIORITYID"    reference="T_ERPATTRDEF(ID)"/>
+            <foreign name="T_ISSTICKET_FK_CRTR"         key="CREATOR"       reference="T_USERPERSON(ID)"/>
+            <foreign name="T_ISSTICKET_FK_MDFR"         key="MODIFIER"      reference="T_USERPERSON(ID)"/>
         </database>
     </definition>
 </datamodel-sqltable>

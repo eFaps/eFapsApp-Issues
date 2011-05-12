@@ -35,6 +35,24 @@
         <version-expression>(version==latest)</version-expression>
         <name>Issues_TicketForm</name>
         <!-- fields -->
+        <field name="typeGroup" character="Group">
+            <property name="ModeCreate">REDAONLY</property>
+            <property name="GroupCount">2</property>
+        </field>
+        <field name="ticketTypeLink">
+            <property name="ModeCreate">EDITABLE</property>
+            <property name="ModeEdit">EDITABLE</property>
+            <property name="Attribute">TicketTypeLink</property>
+            <property name="Required">true</property>
+            <property name="ModeSearch">EDITABLE</property>
+        </field>
+         <field name="status">
+            <property name="ModeEdit">EDITABLE</property>
+            <property name="ModeCreate">EDITABLE</property>
+            <property name="Attribute">PriorityLink</property>
+            <property name="Required">true</property>
+            <property name="ModeSearch">EDITABLE</property>
+        </field>
         <field name="nameGroup" character="Group">
             <property name="ModeCreate">NONE</property>
             <property name="GroupCount">2</property>

@@ -51,6 +51,15 @@
             <property name="Attribute">Description</property>
             <property name="Label">Issues_TicketAbstract/Description.Label</property>
         </field>
+        <field name="ticketTypeLink">
+            <property name="FilterType">PICKER</property>
+            <property name="Attribute">TicketTypeLink</property>
+            <property name="Label">Issues_TicketAbstract/TicketTypeLink.Label</property>
+        </field>
+        <field name="priorityLink">
+            <property name="Attribute">PriorityLink</property>
+            <property name="Label">Issues_TicketAbstract/PriorityLink.Label</property>
+        </field>
         <field name="date">
             <property name="FilterType">FREETEXT</property>
             <property name="FilterRequired">TRUE</property>
