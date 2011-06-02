@@ -43,6 +43,7 @@
             <evaluate program="org.efaps.esjp.common.uitable.MultiPrint">
                 <property name="Types">Issues_TicketAbstract</property>
             </evaluate>
+            <help>org.efaps.wiki.issues.Issues.wiki</help>
         </target>
         <!-- properties -->
         <property name="Target">content</property>
