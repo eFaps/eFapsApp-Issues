@@ -13,37 +13,43 @@
 ----
 
 Para ingresar a la información de la solicitud puede hacerlo por la columna nombre, ejemplo solicitudNA y además también
-podemos ingresar a un contacto por medio de la columna contacto, ejemplo Juan Peralta; a continuación se mostrara una
+puede ingresar a un contacto por medio de la columna contacto, por ejemplo Juan Peralta; a continuación se mostrará una
 lista creada:
 
 || *Tipo* || *Nombre* || *Descripción* || *Fecha* || *Contacto* || *Estado* ||
 || Solicitud ||  *solicitudNA* || Sirve para || May 23, 2011 3:20:00 PM  || *Juan Peralta* || Abierto ||
 
-Veremos los siguientes puntos:
+Mostraremos los siguientes puntos:
 
   # Ingresar por solicitud.
   # Ingresar por contacto.
 
 ==1. Ingresar por solicitud==
-Cuando ingresamos a solicitudNA veremos lo siguiente:
+Cuando ingresa por el nombre(ejemplo solicitudNA) verá lo siguiente:
 
   * 1.1 Editar
   * 1.2 Exportar
   * 1.3 Documentos
 
 ===1.1 Editar===
-Para editar debemos de dirigirse a acción y seleccionar editar, podra cambiar el nombre, la descripción, fecha y estado.
-El estado tiene tres tipos los cuales son:
+Para editar deberá dirigirse a la opción acción y seleccionar editar, podrá cambiar los siguientes campos:
+
+  * Nombre
+  * Descripción
+  * Fecha
+  * Estado.
+
+El estado contiene tres tipos, los cuales son:
 
   * Abierto: este tipo de estado es predeterminado, surge al momento de crear una solicitud.
-  * Cerrado: cuando finaliza esta solicitud se cierra.
-  * Cancelado: cuando ya no se va realizar esta solicitud.
+  * Cerrado: cuando finaliza una solicitud esta se cierra.
+  * Cancelado: adquiere este estado cuando la solicitud se vuelve innecesaria.
 
 ===1.2 Exportar===
-Le sirve para poder imprimir una o varias hojas con todos los datos que se encuentran en el menú, en dos tipos de formatos PDF o XLS.
+Le sirve para poder imprimir una o varias hojas con todos los datos que se encuentran en el menú, en dos tipos de formato PDF o XLS.
 
 ===1.3 Documentos===
-Son los documentos relacionados con esta factura y aparecerán como lista.
+Son los documentos relacionados con esta factura y aparecerán en una lista.
 
 ==2. Ingresar por contacto==
- Cuando ingresamos a Juan Perarlta vemos la información de este contacto(véase [http://localhost:8080/mn/servlet/help/org.efaps.wiki.contacts.Showcontact.wiki acceso a un contacto]).
+ Cuando ingresa por un contacto(ejemplo Juan Perarlta) verá la información de este contacto(véase [./org.efaps.wiki.contacts.Showcontact.wiki acceso a un contacto]).
