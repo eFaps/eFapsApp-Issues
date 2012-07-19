@@ -82,6 +82,9 @@
         <!-- connect the Issues_AttributeDefinitionPriority_Create  to  ERP_AttributeDefinitionMyDesk_Menu_Action-->
         update.add2Menu("d1f996e7-3be5-480c-909e-68feab15175c", "cc4a3bc2-26a7-4b51-b8e5-fabfef5ce2fa", -1);
 
+         <!-- connect the Issues_AttributeDefinitionTicketType_Create  to  ERP_AttributeDefinitionMyDesk_Menu_Action-->
+        update.add2Menu("b7bf8208-0df1-4d5c-a6df-2c059653e92d", "cc4a3bc2-26a7-4b51-b8e5-fabfef5ce2fa", -1);
+
         <!-- Issues_Issues, Admin_Help_MainMenu -->
         update.add2Help("07fa183f-9718-4fca-bd6d-91fb295e7cf3", "dead549e-5cc6-49f9-9a79-8e33aa139f6d", -1);
 
