@@ -230,11 +230,6 @@
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
             <property name="Select">linkto[ContactLink].attribute[Name]</property>
         </field>
-       <field name="contactLink">
-            <property name="SelectAlternateOID">linkto[ContactLink].oid</property>
-            <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
-            <property name="Select">linkto[ContactLink].attribute[Name]</property>
-        </field>
         <field name="project">
             <property name="ModeEdit">READONLY</property>
             <property name="ModeCreate">EDITABLE</property>
