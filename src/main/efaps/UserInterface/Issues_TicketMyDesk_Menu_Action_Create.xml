@@ -41,7 +41,7 @@
         <!-- target definitions -->
         <target>
             <form>Issues_TicketForm</form>
-            <execute program="org.efaps.esjp.common.uiform.Create" >
+            <execute program="org.efaps.esjp.issues.Ticket" method="create">
                 <property name="StatusGroup">Issues_TicketStatus</property>
                 <property name="Status">Open</property>
             </execute>

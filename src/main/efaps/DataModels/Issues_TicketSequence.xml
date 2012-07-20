@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <!--
 
@@ -23,33 +23,14 @@
 
 -->
 
-<datamodel-statusgroup  xmlns="http://www.efaps.org/xsd"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xsi:schemaLocation="http://www.efaps.org/xsd http://www.efaps.org/xsd/eFaps_1.0.xsd">
-    <uuid>b4b02c2a-2ae2-4fac-9541-05cc1472c5b2</uuid>
+<numbergenerator xmlns="http://www.efaps.org/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efaps.org/xsd http://www.efaps.org/xsd/eFaps_1.0.xsd">
+    <uuid>5ea2e67b-7155-499c-b160-ae4bc2fc2f7e</uuid>
     <file-application>eFapsApp-Issues</file-application>
     <file-revision>$Rev$</file-revision>
-
-
     <definition>
         <version-expression>(version==latest)</version-expression>
-        <name>Issues_TicketStatus</name>
-        <parent>Admin_DataModel_StatusAbstract</parent>
-
-        <status key="Open">
-            <description>The ticket is open.</description>
-        </status>
-
-        <status key="Closed">
-            <description>The ticket is closed.</description>
-        </status>
-
-        <status key="Canceled">
-            <description>The ticket is canceled.</description>
-        </status>
-
-        <status key="Processing">
-            <description>The ticket is worked on.</description>
-        </status>
+        <name>Issues_TicketSequence</name>
+        <format>IS-%04d</format>
+        <startvalue>1</startvalue>
     </definition>
-</datamodel-statusgroup>
+</numbergenerator>
