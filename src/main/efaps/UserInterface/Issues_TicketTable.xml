@@ -52,7 +52,7 @@
             <property name="Label">Issues_TicketAbstract/Description.Label</property>
         </field>
         <field name="ticketTypeLink">
-            <property name="FilterType">PICKER</property>
+            <property name="FilterType">PICKLIST</property>
             <property name="Attribute">TicketTypeLink</property>
             <property name="Label">Issues_TicketAbstract/TicketTypeLink.Label</property>
         </field>
@@ -75,7 +75,7 @@
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
         </field>
         <field name="status">
-            <property name="FilterType">PICKER</property>
+            <property name="FilterType">PICKLIST</property>
             <property name="Attribute">StatusAbstract</property>
             <property name="Label">Issues_TicketAbstract/StatusAbstract.Label</property>
         </field>
