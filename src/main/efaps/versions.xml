@@ -2,7 +2,7 @@
 
 <!--
 
-  Copyright 2003 - 2010 The eFaps Team
+  Copyright 2003 - 2013 The eFaps Team
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -29,61 +29,61 @@
         <dependency order="0">
             <groupId>org.efaps</groupId>
             <artifactId>efaps-kernel-install</artifactId>
-            <version>2.2.0-SNAPSHOT</version>
+            <version>3.0.0-SNAPSHOT</version>
         </dependency>
         <dependency order="1">
             <groupId>org.efaps</groupId>
             <artifactId>efaps-webapp-install</artifactId>
-            <version>2.2.0-SNAPSHOT</version>
+            <version>3.0.0-SNAPSHOT</version>
         </dependency>
         <dependency order="2">
             <groupId>org.efaps.apps</groupId>
             <artifactId>contacts</artifactId>
-            <version>2.2.0-SNAPSHOT</version>
+            <version>3.0.0-SNAPSHOT</version>
         </dependency>
         <dependency order="3">
             <groupId>org.efaps.apps</groupId>
             <artifactId>commons</artifactId>
-            <version>2.2.0-SNAPSHOT</version>
+            <version>3.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <version number="1" reloadCache="false" login="true" compile="true">
     <description>Install eFaps Issues App.</description>
     <script type="groovy">
-        import org.efaps.admin.runlevel.RunLevel;
-        import org.efaps.db.Context;
-        import org.efaps.db.SearchQuery;
-        import org.efaps.esjp.admin.ui.UIUpdate;
-        import org.efaps.importer.DataImport;
-
-        import java.net.URL
         import java.io.File;
+            import java.util.UUID;
+            import org.efaps.admin.runlevel.RunLevel;
+            import org.efaps.admin.user.JAASSystem;
+            import org.efaps.admin.user.Role;
+            import org.efaps.db.Context;
+            import org.efaps.db.QueryBuilder;
+            import org.efaps.db.InstanceQuery;
+            import org.efaps.esjp.admin.ui.UIUpdate;
+            import org.efaps.importer.DataImport;
 
-        EFAPS_LOGGER.info("Importing Data for eFaps Issues App");
-
-        SearchQuery query = new SearchQuery();
-        query.setQueryTypes("Admin_User_JAASKey");
-        query.addWhereExprEqValue("Key", "Issues_Admin");
-        query.addSelect("OID");
-        query.execute();
-        if (!query.next()) {
+            EFAPS_LOGGER.info("Importing Data for eFapsApp-Issues");
 
             RunLevel.init("shell");
             RunLevel.execute();
 
-                        URL url3 = new URL(EFAPS_ROOTURL, "Data/IMPORT_UserJAASKey.xml");
-            DataImport imp3 = DataImport.readFile(url3);
-            imp3.updateInDB();
-        }
-        UIUpdate update = new UIUpdate();
-        <!-- connect the Issues_MyDesk to the main menu from efaps -->
-        update.add2Menu("e7230511-c763-4896-9e8e-e5237171f7d4", "87001cc3-c45c-44de-b8f1-776df507f268", 1);
+            // Admin_User_JAASKey
+            QueryBuilder queryBldr = new QueryBuilder(UUID.fromString("0e7650c6-8ec3-4c63-b377-f3eb5fb85f16"));
+            queryBldr.addWhereAttrEqValue("Key", "Issues_Admin");
+            InstanceQuery query = queryBldr.getQuery();
+            query.executeWithoutAccessCheck();
+            if (!query.next()) {
+                DataImport.readFile(new URL(EFAPS_ROOTURL, "Data/IMPORT_UserJAASKey.xml")).updateInDB();
+            }
 
-        <!-- connect the Issues_AttributeDefinition_Menu_Action  to  ERP_AttributeDefinitionMyDesk_Menu-->
-        update.add2Menu("9675e6b2-6195-4837-b48f-ea17c0df5bc9", "69e0b34a-2483-4662-9a45-1ce5d4e420e6", -1);
+            UIUpdate update = new UIUpdate();
+            <!-- connect the Issues_MyDesk to the main menu from efaps -->
+            update.add2Menu("e7230511-c763-4896-9e8e-e5237171f7d4", "87001cc3-c45c-44de-b8f1-776df507f268", 1);
 
-        <!-- Issues_Issues, Admin_Help_MainMenu -->
-        update.add2Help("07fa183f-9718-4fca-bd6d-91fb295e7cf3", "dead549e-5cc6-49f9-9a79-8e33aa139f6d", -1);
+            <!-- connect the Issues_AttributeDefinition_Menu_Action  to  ERP_AttributeDefinitionMyDesk_Menu-->
+            update.add2Menu("9675e6b2-6195-4837-b48f-ea17c0df5bc9", "69e0b34a-2483-4662-9a45-1ce5d4e420e6", -1);
+
+            <!-- Issues_Issues, Admin_Help_MainMenu -->
+            update.add2Help("07fa183f-9718-4fca-bd6d-91fb295e7cf3", "dead549e-5cc6-49f9-9a79-8e33aa139f6d", -1);
 
     </script>
     </version>
