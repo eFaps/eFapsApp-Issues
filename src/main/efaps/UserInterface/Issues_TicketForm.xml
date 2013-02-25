@@ -106,13 +106,13 @@
             <property name="ModeEdit">NONE</property>
             <property name="ModeView">NONE</property>
             <property name="Required">true</property>
-            <trigger program="org.efaps.esjp.erp.Contacts"
+            <trigger program="org.efaps.esjp.contacts.Contacts"
                 method="autoComplete4Contact"
                 name="Issues_TicketForm.contactLink.UI_FIELD_AUTOCOMPLETE"
                 event="UI_FIELD_AUTOCOMPLETE" >
                 <property name="Key">ID</property>
             </trigger>
-            <trigger program="org.efaps.esjp.erp.Contacts"
+            <trigger program="org.efaps.esjp.contacts.Contacts"
                 method="updateFields4Contact"
                 name="Issues_TicketForm.contactLink.UI_FIELD_UPDATE"
                 event="UI_FIELD_UPDATE" >
