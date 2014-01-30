@@ -106,6 +106,7 @@
             <property name="ModeEdit">NONE</property>
             <property name="ModeView">NONE</property>
             <property name="Required">true</property>
+            <property name="Columns">80</property>
             <trigger program="org.efaps.esjp.contacts.Contacts"
                 method="autoComplete4Contact"
                 name="Issues_TicketForm.contactLink.UI_FIELD_AUTOCOMPLETE"
@@ -239,6 +240,7 @@
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
             <property name="ClassNameUI">org.efaps.admin.datamodel.ui.StringUI</property>
             <property name="Label">Issues_TicketForm.project.Label</property>
+            <property name="Columns">80</property>
             <trigger program="org.efaps.esjp.projects.Project"
                 method="autoComplete4Project"
                 name="Issues_TicketForm.project.UI_FIELD_AUTOCOMPLETE"
