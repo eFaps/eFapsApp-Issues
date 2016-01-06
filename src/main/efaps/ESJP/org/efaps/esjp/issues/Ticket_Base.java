@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2010 The eFaps Team
+ * Copyright 2003 - 2015 The eFaps Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,9 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Revision:        $Rev$
- * Last Changed:    $Date$
- * Last Changed By: $Author$
  */
 
 package org.efaps.esjp.issues;
@@ -34,7 +31,7 @@ import org.efaps.admin.event.Parameter;
 import org.efaps.admin.event.Parameter.ParameterValues;
 import org.efaps.admin.event.Return;
 import org.efaps.admin.event.Return.ReturnValues;
-import org.efaps.admin.program.esjp.EFapsRevision;
+import org.efaps.admin.program.esjp.EFapsApplication;
 import org.efaps.admin.program.esjp.EFapsUUID;
 import org.efaps.db.Insert;
 import org.efaps.db.Instance;
@@ -51,10 +48,9 @@ import org.efaps.util.EFapsException;
  * TODO comment!
  *
  * @author The eFaps Team
- * @version $Id$
  */
 @EFapsUUID("9b759945-427f-47ad-9cf2-575d1cef3c5b")
-@EFapsRevision("$Rev$")
+@EFapsApplication("eFapsApp-Issues")
 public class Ticket_Base
 {
 
@@ -131,7 +127,7 @@ public class Ticket_Base
             print.addAttribute("Contact");
             print.execute();
 
-            _insert.add(CIIssues.Ticket.ContactLink, print.getAttribute("Contact"));
+            _insert.add(CIIssues.Ticket.ContactLink, print.<Long>getAttribute("Contact"));
 
             // Issues_Configuration
             if (SystemConfiguration.get(UUID.fromString("1aadb5f5-c762-46ce-8bb0-071605f382e1"))
