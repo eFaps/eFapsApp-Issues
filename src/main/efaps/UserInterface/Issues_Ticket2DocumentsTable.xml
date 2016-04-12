@@ -43,7 +43,7 @@
             <property name="HRef">${COMMONURL}/MenuTree.jsp</property>
             <property name="Phrase">$&lt;linkto[ToAbstractLink].type.label&gt; - $&lt;linkto[ToAbstractLink].attribute[Name]&gt;</property>
             <property name="Label">ERP_DocumentAbstract/Name.Label</property>
-            <property name="ClassNameUI">org.efaps.admin.datamodel.ui.StringUI</property>
+            <property name="UIProvider">org.efaps.admin.datamodel.ui.StringUI</property>
         </field>
         <field name="date">
             <property name="Select">linkto[ToAbstractLink].attribute[Date]</property>
