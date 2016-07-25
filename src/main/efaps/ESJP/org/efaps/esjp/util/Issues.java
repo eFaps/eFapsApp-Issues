@@ -23,7 +23,7 @@ package org.efaps.esjp.util;
 import java.util.UUID;
 
 import org.efaps.admin.common.SystemConfiguration;
-import org.efaps.admin.program.esjp.EFapsRevision;
+import org.efaps.admin.program.esjp.EFapsApplication;
 import org.efaps.admin.program.esjp.EFapsUUID;
 import org.efaps.util.cache.CacheReloadException;
 
@@ -34,7 +34,7 @@ import org.efaps.util.cache.CacheReloadException;
  * @version $Id$
  */
 @EFapsUUID("1a3f8344-e4f7-4cf2-aeb5-34bcbc202357")
-@EFapsRevision("$Rev$")
+@EFapsApplication("eFapsApp-Issues")
 public final class Issues
 {
     /**

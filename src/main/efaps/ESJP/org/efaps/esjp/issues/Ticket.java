@@ -21,7 +21,7 @@
 
 package org.efaps.esjp.issues;
 
-import org.efaps.admin.program.esjp.EFapsRevision;
+import org.efaps.admin.program.esjp.EFapsApplication;
 import org.efaps.admin.program.esjp.EFapsUUID;
 
 
@@ -34,7 +34,7 @@ import org.efaps.admin.program.esjp.EFapsUUID;
  * @version $Id$
  */
 @EFapsUUID("10163b92-9cb8-4ea2-bb69-cc4d9fb8b9bb")
-@EFapsRevision("$Rev$")
+@EFapsApplication("eFapsApp-Issues")
 public class Ticket
     extends Ticket_Base
 {

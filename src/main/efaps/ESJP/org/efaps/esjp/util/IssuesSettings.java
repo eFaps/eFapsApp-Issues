@@ -21,7 +21,7 @@
 
 package org.efaps.esjp.util;
 
-import org.efaps.admin.program.esjp.EFapsRevision;
+import org.efaps.admin.program.esjp.EFapsApplication;
 import org.efaps.admin.program.esjp.EFapsUUID;
 
 
@@ -32,7 +32,7 @@ import org.efaps.admin.program.esjp.EFapsUUID;
  * @version $Id$
  */
 @EFapsUUID("b1a37390-2b56-4e3e-bc1c-fe5856b3f941")
-@EFapsRevision("$Rev$")
+@EFapsApplication("eFapsApp-Issues")
 public interface IssuesSettings
 {
 
