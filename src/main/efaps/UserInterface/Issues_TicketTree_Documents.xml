@@ -40,8 +40,8 @@
         <target>
             <table>Issues_Ticket2DocumentsTable</table>
             <evaluate program="org.efaps.esjp.common.uitable.MultiPrint">
-                <property name="Types">Issues_Ticket2DocumentAbstract</property>
-                <property name="LinkFroms">FromAbstractLink</property>
+                <property name="Type">Issues_Ticket2DocumentAbstract</property>
+                <property name="LinkFrom">FromAbstractLink</property>
             </evaluate>
         </target>
         <!-- properties -->

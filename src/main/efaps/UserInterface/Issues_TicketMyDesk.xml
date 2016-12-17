@@ -41,7 +41,7 @@
             <menu>Issues_TicketMyDesk_Menu</menu>
             <table>Issues_TicketTable</table>
             <evaluate program="org.efaps.esjp.common.uitable.MultiPrint">
-                <property name="Types">Issues_TicketAbstract</property>
+                <property name="Type">Issues_TicketAbstract</property>
             </evaluate>
             <help>org.efaps.wiki.issues.Issues.wiki</help>
         </target>
