@@ -66,7 +66,7 @@
             <property name="Attribute">Name</property>
             <property name="Required">true</property>
             <property name="ModeSearch">EDITABLE</property>
-            <trigger program="org.efaps.esjp.admin.access.AccessOnField"
+            <trigger program="org.efaps.esjp.admin.access.AccessCheck4UI"
                 method="configCheck"
                 name="Issues_TicketForm.Issues_TicketForm.Issues_TicketForm"
                 event="UI_ACCESSCHECK">
@@ -198,7 +198,7 @@
             <property name="Attribute">Name</property>
             <property name="Required">true</property>
             <property name="ModeSearch">EDITABLE</property>
-            <trigger program="org.efaps.esjp.admin.access.AccessOnField"
+            <trigger program="org.efaps.esjp.admin.access.AccessCheck4UI"
                 method="configCheck"
                 name="Issues_TicketForm.Issues_TicketForm.Issues_TicketForm"
                 event="UI_ACCESSCHECK">
