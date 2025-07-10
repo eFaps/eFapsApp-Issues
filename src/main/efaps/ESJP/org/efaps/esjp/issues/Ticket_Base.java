@@ -39,7 +39,6 @@ import org.efaps.db.QueryBuilder;
 import org.efaps.esjp.ci.CIFormIssues;
 import org.efaps.esjp.ci.CIIssues;
 import org.efaps.esjp.common.uiform.Create;
-import org.efaps.ui.wicket.util.EFapsKey;
 import org.efaps.util.EFapsException;
 
 /**
@@ -172,9 +171,9 @@ public class Ticket_Base
                                     + (descr.length() > 20 ? "..." : "");
                     final Object key = multi.getAttribute(keyStr);
                     final Map<String, String> map = new HashMap<String, String>();
-                    map.put(EFapsKey.AUTOCOMPLETE_KEY.getKey(), key.toString());
-                    map.put(EFapsKey.AUTOCOMPLETE_VALUE.getKey(), name);
-                    map.put(EFapsKey.AUTOCOMPLETE_CHOICE.getKey(), choice);
+                    map.put("eFapsAutoCompleteKEY", key.toString());
+                    map.put("eFapsAutoCompleteVALUE", name);
+                    map.put("eFapsAutoCompleteCHOICE", choice);
                     tmpMap.put(choice, map);
                 }
             }
